@@ -1,55 +1,30 @@
-# NLP
+# Discovering the conversation around the #WornWear hashtag by Patagonia
 NLP and Unsupervised Learning
 
-Abstract
+# Abstract
 
-For this project, the main goal is to create a classification algorithm, capable of determining which clients of a financial institution are likely to close their account. With this information, the bank, could offer those clients a reduction on their monthly fees, or some others benefits to incentive them to keep them as users. To reach the goal, historic data from the bank is used, in order to develop a baseline predicting model. From there, I evaluated more complex models and solutions tailored to deal with the imbalanced present in the data. The end result will be an interpretable model and a black box model, capable of providing better results.
+By gathering more than 3000 tweets associated to the hashtag #WornWear, I was able to identify latent topics in the conversation around the #WornWear campaing by Patagonia, obtaining insights about what were the topics that generated the most interactions and likes. From the results of the findings, recommendations were made to increase the reach and efforts within the main topics. 
 
-Design
+# Design
 
-To achieve the goal of the project, EDA was applied in a highly iterative way. After building of the base model, feature engineering was used in order to increase the complexity of the data and helping the evaluated models improve their performance. Finally, hyperparameter tuning was used to generate the final models.
+To achieve the goal of the project, EDA was applied in a highly iterative way. After building a base NMF model, obataining some initial topics, and applying a more throught approach in the preprocessing in order to improve the quality of the topics. When the results from NMF made sense, I applied a semi-supervised approach with CorEx in order to dig deeper for some key words I was interest in finding. 
 
-Data
+# Data
 
-Data set contains 10.000 data points, for unique clients of the bank, including: Salary, balance, age, country of residency, number of products, if user has a credit card and a column indicating if the client has closed their account.
+Data set contains 3700 data points (tweets), including: username, bio, content of the tweets and the interactivity measures (retweets, likes, replies). 
 
-Algorithms
+# Algorithms
 
-Data Acquisition: Data obtained from Kaggle. Data Exploration: Observation of the data and its characteristics, looking for missing or unexpected values. Data Cleaning: Done initially and almost throughout the entire process. Data Visualization: Studying the performance of the models via graphs.
+Data Acquisition: Initially used Tweepy to get the tweets, but after running into some limitations, I had to use the SNScrape as the tool for the tweets acquisition. 
 
-Feature Engineering
+Algorithms and techniques used for the topic modeling were Non-negative Matrix Factorization and CorEx. 
 
-Creating groups based on age.
-Analyzing if people tend to be savers, based on their balance / salary ratio.
-Combining dummies variables with the rest of the numerical variables.
-Creating a feature to measure the ratio of tenure compared to the number of products they hold.
-Models
-
-Logistic regression, k-nearest neighbors, and random forest classifiers were used. Baseline model was a KNN, that performed better than the logistic regression, before doing any kind of feature engineering on the data.
-
-Model Evaluation and Selection
-
-For this project, after generating a more complex dataset, the logistic regression was used as the model to bring the interpretability into the picture, and helps us take some more informed decisions to improve the customer satisfaction.
-
-A RF model, turned out to be better for profit maximization, and that is why was included as another alternative.
-
-Final Random Forest scores:
-
-Accuracy 0.87
-F1 0.57
-precision 0.77
-recall 0.45
-Final Logistic Regression scores:
-
-Accuracy: 0.82
-F1: 0.55
-Precision: 0.53
-Recall: 0.56
-Tools
 
 Numpy and Pandas for data manipulation
 Scikit-learn for modeling
 Matplotlib and Seaborn for plotting
-Communication
+
+
+# Communication
 
 Submitted PDF slides and 5 minutes presentation.
