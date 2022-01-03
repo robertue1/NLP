@@ -1,9 +1,9 @@
-# Discovering the conversation around the #WornWear hashtag by Patagonia
+# Analyzing tweets of the 'wornwear' campaign by Patagonia
 NLP and Unsupervised Learning
 
 # Abstract
 
-By gathering more than 3000 tweets associated to the hashtag #WornWear, I was able to identify latent topics in the conversation around the #WornWear campaing by Patagonia, obtaining insights about what were the topics that generated the most interactions and likes. From the results of the findings, recommendations were made to increase the reach and efforts within the main topics. 
+By gathering more than 3000 tweets associated to the hashtag #WornWear, I was able to identify latent topics in the conversation around the #WornWear campaign by Patagonia, obtaining insights about what were the topics that generated the most interactions and likes. From the results of the findings, recommendations were made to increase the reach and efforts within the main topics. 
 
 # Design
 
