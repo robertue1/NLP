@@ -3,11 +3,11 @@ NLP and Unsupervised Learning
 
 # Abstract
 
-By gathering more than 3000 tweets associated to the hashtag #WornWear, I was able to identify latent topics in the conversation around the #WornWear campaign by Patagonia, obtaining insights about what were the topics that generated the most interactions and likes. From the results of the findings, recommendations were made to increase the reach and efforts within the main topics. 
+By gathering more than 3000 tweets associated with the hashtag #WornWear, we identified latent topics in the conversation around the #WornWear campaign by Patagonia, obtaining insights about the topics that generated the most interactions and likes. From the findings, we could provide recommendations to increase focus on the aspects that resonate the most within the community. 
 
 # Design
 
-To achieve the goal of the project, EDA was applied in a highly iterative way. After building a base NMF model, obataining some initial topics, and applying a more throught approach in the preprocessing in order to improve the quality of the topics. When the results from NMF made sense, I applied a semi-supervised approach with CorEx in order to dig deeper for some key words I was interest in finding. 
+EDA was applied in a highly iterative way to achieve the project's goal. I initially built a base NMF model, generating the first topics and applying a more thorough approach in the preprocessing to improve the topics' quality. After the results from NMF seemed correct, I applied a semi-supervised approach with CorEx in order to dig deeper for some keywords I was interested in finding.  
 
 # Data
 
